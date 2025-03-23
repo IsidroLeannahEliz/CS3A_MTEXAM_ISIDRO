@@ -1,0 +1,150 @@
+body {
+    background-color:aqua;
+    font-family: Arial, sans-serif;
+    margin: 1;
+    padding: 5;
+    line-height: 2;
+}
+
+header {
+    background:darkviolet;
+    color:aqua;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color:cornflowerblue;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('../assets/Leannah.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:skyblue;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    background:darkslategray;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+aside {
+    width: 20%;
+    padding: 20px;
+    background:teal;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.portrait, .feature-logo {
+    width: 100%;
+    height:fit-content;
+    border-radius: 8px;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background:purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background:coral;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background:mediumblue;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.products {
+    flex: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    border: 2px solid #ccc;
+    border-radius: 9px;
+    padding: 10px;
+    text-align: center;
+    background:darkcyan;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height:auto;
+    border-radius: 8px;
+}
+
+.add-to-cart {
+    padding: 10px;
+    background:blanchedalmond;
+    color:chocolate;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background:lightcoral;
+}
